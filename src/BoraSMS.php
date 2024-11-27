@@ -22,7 +22,7 @@ class BoraSMS
     public function __construct()
     {
         // Load environment variables from .env if available
-        $dotenv = Dotenv::createImmutable(__DIR__ . '/../..'); // Assuming .env is at the root level
+        $dotenv = Dotenv::createImmutable(__DIR__ . '/../../..'); // Assuming .env is at the root level
         $dotenv->load();
 
         // Get API credentials from environment variables or the constructor (if provided)
