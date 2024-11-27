@@ -1,0 +1,22 @@
+{
+    "name": "ilebora/borasms",
+    "description": "A package for sending SMS via the BoraSMS API.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ILEBORA\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominic Karau",
+            "email": "dominic.karau@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

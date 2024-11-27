@@ -1,0 +1,19 @@
+# Ignore Composer's vendor directory
+/vendor/
+
+# Ignore PHPUnit test results
+/tests/_output/
+
+# Ignore IDE-specific files (e.g., for VSCode, PhpStorm, etc.)
+.idea/
+.vscode/
+
+# Ignore system files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore environment configuration files (for sensitive data)
+.env
