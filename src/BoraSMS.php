@@ -2,8 +2,6 @@
 
 namespace ILEBORA;
 
-use Dotenv\Dotenv;
-
 class BoraSMS
 {
     private $smsApi = 'https://api.boracore.co.ke/send';
@@ -19,22 +17,17 @@ class BoraSMS
     
 
     // Constructor to optionally load credentials from the environment or user-provided values
-    public function __construct()
-    {
-        // Load environment variables from .env if available
-        $dotenv = Dotenv::createImmutable(__DIR__ . '/../../..'); // Assuming .env is at the root level
-        $dotenv->load();
+    public function __construct() {
+        // Load environment variables directly in the constructor
+        $this->apiKey = $_ENV['BORA_SMS_APIKEY'];
+        $this->userId = $_ENV['BORA_SMS_USERID'];
+        $this->displayName = $_ENV['BORA_SMS_DISPLAYNAME'];
+        $this->successUrl = $_ENV['BORA_SMS_SUCCESS_URL'];
+        $this->failureUrl = $_ENV['BORA_SMS_FAILURE_URL'];
 
-        // Get API credentials from environment variables or the constructor (if provided)
-        $this->apiKey = getenv('BORA_SMS_API_KEY');
-        $this->userID = getenv('BORA_SMS_USER_ID');
-        $this->displayName = getenv('BORA_SMS_DISPLAY_NAME');
-
-        if (empty($this->apiKey) || empty($this->userID) || empty($this->displayName)) {
+        if (empty($this->apiKey) || empty($this->userId) || empty($this->displayName)) {
             throw new \Exception('API key, User ID, and Display Name are required.');
         }
-
-        return $this;
     }
 
     // Setter methods to allow users to override the values
