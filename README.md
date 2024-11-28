@@ -50,11 +50,15 @@ try {
     //     ->setUserID('your_user_id')
     //     ->setDisplayName('your_display_name');
 
+    // Option3: Set the API version you are taregeting
+    // $sms->setApiVersion('1.1');
+
     // Set other SMS properties
-    $sms->setPhone('1234567890')
+    $sms->setPhone('0113703323')
         ->setMessage('Hello, this is a test message!')
-        ->setOnSuccess('success_callback_url')
-        ->setOnFailure('failure_callback_url');
+        // ->setOnSuccess('success_callback_url')
+        // ->setOnFailure('failure_callback_url')
+        ;
 
     // Send the SMS
     $response = $sms->sendSMS();
@@ -71,6 +75,9 @@ try {
 
 - **`__construct()`**  
   Optionally loads credentials from environment variables. Throws an exception if required credentials are missing.
+
+- **`setApiVersin($apiVersion)`**  
+  Sets the API version to use.
 
 - **`setApiKey($apiKey)`**  
   Sets the API key used for authentication.
@@ -98,7 +105,7 @@ try {
 
 ### Handling Responses
 
-The `sendSMS()` method returns the raw API response. You can use this response to check the status of the SMS request or handle it accordingly (e.g., display a success message or log an error).
+The `sendSMS()` method returns the JSON API response. You can use this response to check the status of the SMS request or handle it accordingly (e.g., display a success message or log an error).
 
 ### Example Callback Response
 
@@ -106,9 +113,16 @@ The response returned by the API might look like this:
 
 ```json
 {
-  "status": "success",
-  "messageId": "abc123",
-  "message": "Message sent successfully"
+  "code":"x001",
+  "response":"success",
+  "message":"Message Sent.",
+    "data":{
+        "response-code":200,
+        "response-description":"Success",
+        "mobile":25412345678,
+        "messageid":"abcdEFH123",
+        "networkid":1
+        }
 }
 ```
 
