@@ -1,3 +1,10 @@
+## [1.1.2] - 2024-11-29
+- patch version bump
+
+### New Commits
+2ada510 Fixed: changed to use ILEBORA\Services\BoraService
+3af8f1b Bump version to  1.1.1
+
 ## [1.1.1] - 2024-11-29
 - patch version bump
 
