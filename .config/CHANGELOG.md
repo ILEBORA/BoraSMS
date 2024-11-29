@@ -1,3 +1,11 @@
+## [1.1.1] - 2024-11-29
+- patch version bump
+
+### New Commits
+9bd2807 Test base logic
+276fc35 Feature: Added Base package to manage Bora services
+d6aa689 Bump version to  1.1.0
+
 ## [1.1.0] - 2024-11-29
 - minor version bump
 
