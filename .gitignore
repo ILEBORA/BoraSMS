@@ -18,5 +18,4 @@ Thumbs.db
 # Ignore environment configuration files (for sensitive data)
 .env
 
-# Ignore bora .config
-.config
+/.bck/

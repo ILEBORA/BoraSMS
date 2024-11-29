@@ -40,6 +40,8 @@ class BoraSMSTest extends TestCase
         $mockCurl->setMessage('Hello, world!');
         $mockCurl->setOnSuccess('success_callback');
         $mockCurl->setOnFailure('failure_callback');
+
+        // $mockCurl->setTest(true);
         
         // Test sending SMS
         $response = $mockCurl->sendSMS();
