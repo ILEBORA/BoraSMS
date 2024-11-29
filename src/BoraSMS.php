@@ -7,7 +7,7 @@
  */
 namespace ILEBORA;
 
-use ILEBORA\Base\BoraService;
+use ILEBORA\Services\BoraService;
 
 class BoraSMS extends BoraService
 {
