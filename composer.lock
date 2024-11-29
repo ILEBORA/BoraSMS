@@ -4,17 +4,58 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bee5d114e38879ed4e4ee3de8e11e59",
-    "packages": [],
+    "content-hash": "9dc74d77d00c9093bf93a89f046a7a19",
+    "packages": [
+        {
+            "name": "ilebora/base",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ILEBORA/Base.git",
+                "reference": "0794e0ef0caaddb066d18e307c6349715caaac9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ILEBORA/Base/zipball/0794e0ef0caaddb066d18e307c6349715caaac9c",
+                "reference": "0794e0ef0caaddb066d18e307c6349715caaac9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ILEBORA\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dominic Karau",
+                    "email": "dominic.karau@gmail.com"
+                }
+            ],
+            "description": "A base library for shared logic across Ilebora packages.",
+            "support": {
+                "issues": "https://github.com/ILEBORA/Base/issues",
+                "source": "https://github.com/ILEBORA/Base/tree/v1.0.1"
+            },
+            "time": "2024-11-29T01:35:21+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.0"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
