@@ -1,3 +1,9 @@
+## [1.1.0] - 2024-11-29
+- minor version bump
+
+### New Commits
+c1b5247 Bump version to  1.0.1
+
 ## [1.0.1] - 2024-11-28
 - patch version bump
 
